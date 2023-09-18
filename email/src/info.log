@@ -1,0 +1,7 @@
+[2023-09-18T12:18:56.676804+02:00] info.WARNING: Foo [] []
+[2023-09-18T12:18:56.691889+02:00] info.ERROR: Bar [] []
+[2023-09-18T12:21:01.932369+02:00] info.WARNING: name: Dylan van der venemail: dylanislang@gmail.commessage: HALLO [] []
+[2023-09-18T12:21:14.702862+02:00] info.WARNING: name: Dylan van der venemail: dylanislang@gmail.commessage: HALLO [] []
+[2023-09-18T12:21:26.290240+02:00] info.WARNING: name: Dylan van der venemail: dylanislang@gmail.commessage: HALLO [] []
+[2023-09-18T12:22:03.677532+02:00] info.WARNING: name: Dylan van der ven email: dylanislang@gmail.com message: HALLO [] []
+[2023-09-18T12:22:45.542522+02:00] info.WARNING: name: Dylan van der ven, email: dylanislang@gmail.com, message: HALLO [] []

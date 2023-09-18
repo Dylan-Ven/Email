@@ -2,6 +2,11 @@
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMAiler\Exception;
+
+    use Monolog\Level;
+    use Monolog\Logger;
+    use Monolog\handler\StreamHandler;
+
     require_once __DIR__ . ('\vendor/autoload.php');
     ?>
 <!DOCTYPE html>
@@ -27,6 +32,10 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $text = $_POST['Message'];
 
+$log = new Logger('info');
+$log->pushHandler(new StreamHandler('src/info.log', Level::Warning));
+
+
 try {
     //recipient
     $mail->setFrom('ven.dylanvander@gmail.com', 'Dylan');
@@ -40,4 +49,6 @@ try {
 } catch (Exception $e) {
     echo "jammer, het bericht is niet verstuurd" . $mail->ErrorInfo;
 }
+$log->warning('name: ' . $name . ", " . 'email: ' . $email . ", " . 'message: ' . $text);
+
 ?>
