@@ -49,6 +49,6 @@ try {
 } catch (Exception $e) {
     echo "jammer, het bericht is niet verstuurd" . $mail->ErrorInfo;
 }
-$log->warning('name: ' . $name . ", " . 'email: ' . $email . ", " . 'message: ' . $text);
+$log->warning("Name: {$name}, Email: {$email}, Message: {$text}");
 
 ?>
